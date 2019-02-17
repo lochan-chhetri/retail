@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/soaringweb/retail.svg?branch=master)](https://travis-ci.org/soaringweb/retail)
