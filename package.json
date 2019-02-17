@@ -7,6 +7,17 @@
     "build": "webpack",
     "start": "webpack-dev-server --open"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soaringweb/retail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soaringweb/retail/issues"
+  },
+  "engines" : {
+    "node" : ">=8.9.3",
+    "npm" : ">=5.4.2"
+  },
   "author": "Lochan Chhetri",
   "license": "ISC",
   "devDependencies": {
