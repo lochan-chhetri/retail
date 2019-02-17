@@ -18,7 +18,23 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'A Retail Website',
-        }),
+            template: path.resolve(__dirname, 'src/index.html'),
+            filename: "./index.html"
+        })
     ],
+    module: {
+        rules: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+            loader: "babel-loader"
+            }
+        },
+        {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"]
+        }
+        ]
+  }
 }
